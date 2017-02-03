@@ -10,6 +10,9 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
 
@@ -18,20 +21,120 @@
     <body>
 
         <div class="site-wrapper">
-            <aside class="site-menu"></aside>
-
             <main class="site-content">
+                <!-- Menu -->
                 <section id="navbar" class="site-menu">
+                    <div class="menu-desktop hidden-xs hidden-sm">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a href="./" class="inline-block">
+                                        <img src="img/logo.png" alt="Nombre del sitio" width="90">
+                                    </a>
+                                </div>
+                                <div class="col-md-10">
+                                    <nav>
+                                        <ul class="list-unstyled list-inline m-0">
+                                            <li><a href="">El evento</a></li>
+                                            <li><a href="">Formato</a></li>
+                                            <li><a href="">Inscripción</a></li>
+                                            <li><a href="">Sponsors</a></li>
+                                            <li><a href="">Ubicación</a></li>
+                                            <li><a href="">Contacto</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-mobile hidden-md hidden-lg">
+                        <a href="./" class="inline-block">
+                            <img class="logo-responsive m-0" src="img/logo.png" alt="nombre del sitio">
+                        </a>
+                        <div class="menu-toggle">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                        <nav class="navbar-mobile hidden relative">
+                            <ul class="list-unstyled list-inline m-0">
+                                <li><a href="">El evento</a></li>
+                                <li><a href="">Formato</a></li>
+                                <li><a href="">Inscripción</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Ubicación</a></li>
+                                <li><a href="">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <!-- Fin: Menu -->
 
+                <!-- Home -->
+                <header id="home" class="bg-img-block" style="background: url(img/home.jpg);">
+                    <div class="overlay">
+                        <div class="home-content">
+                            <img src="img/logo.png" class="logo" alt="Logo de evento">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloribus doloremque dolore nobis laborum rerum illo eveniet ab molestias aliquam, expedita obcaecati cupiditate velit, natus nemo odit pariatur. Soluta, velit.</p>
+                            <a href="#" class="inline-block mt-35">
+                                <img src="img/arrow-down.svg" alt="Bajar" width="50">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <!-- Fin: Home -->
+
+                <!-- El Evento -->
+                <section id="evento">
+                    <div class="container pv-52">
+                        <div class="row">
+                            <h2 class="text-center">El evento</h2>
+                            <hr>
+                            <div class="col-md-12">
+                                <p class="text-center text-faded">
+                                    Este es el tercer año que organizamos el Agile Open Camp, un evento comunitario, sin fines de lucro, auto-organizado, en contacto con la región de Bariloche, en el cual la comunidad agile de Argentina y Latinoamérica podrá compartir en un mismo sitio actividades de divulgación, exploración y creación en temáticas relacionadas con la agilidad en un formato relajado y desestructurado, mezclado con actividades gastronómicas, turísticas, deportivas y/o de entretenimiento.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <div class="service-box">
+                                    <i class="fa fa-4x fa fa-compass text-white sr-icons"></i>
+                                    <h3>Agile</h3>
+                                    <p class="text-faded">La excusa son las metodologías ágiles (con Scrum, Kanban, Lean, Extreme Programming, etc.), pero es también un disparador de muchas temáticas relacionadas con nuevos paradigmas de trabajo en equipo y de cómo concebimos la vida
+                                        misma.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="service-box">
+                                    <i class="fa fa-4x fa fa-unlock text-white sr-icons"></i>
+                                    <h3>Open</h3>
+                                    <p class="text-faded">La excusa son las metodologías ágiles (con Scrum, Kanban, Lean, Extreme Programming, etc.), pero es también un disparador de muchas temáticas relacionadas con nuevos paradigmas de trabajo en equipo y de cómo concebimos la vida
+                                        misma.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="service-box">
+                                    <i class="fa fa-4x fa fa-sun-o text-white sr-icons"></i>
+                                    <h3>Camp</h3>
+                                    <p class="text-faded">La excusa son las metodologías ágiles (con Scrum, Kanban, Lean, Extreme Programming, etc.), pero es también un disparador de muchas temáticas relacionadas con nuevos paradigmas de trabajo en equipo y de cómo concebimos la vida
+                                        misma.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section id="home">
-                </section>
+                <!-- Fin: El Evento -->
             </main>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
