@@ -50,10 +50,14 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 3px solid white;
+  border-top: 3px solid #f05f40;
   margin: 20px auto;
   padding: 0;
   width: 50px;
+}
+
+hr.light {
+  border-color: white;
 }
 
 /*
@@ -269,6 +273,7 @@ p {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Fin: Home */
 #evento {
   position: relative;
   min-height: 655px;
@@ -276,7 +281,33 @@ p {
   background-color: #f05f40;
 }
 
-/* Fin: Home */
+#formato {
+  position: relative;
+  min-height: 655px;
+  min-height: 100vh;
+}
+
+#formato i, #formato a {
+  color: #f05f40;
+}
+
+#formato, #inscripcion {
+  background-color: #FFFFFF;
+  color: #333;
+}
+
+#formato p, #inscripcion p {
+  color: #333;
+}
+
+#sponsors {
+  position: relative;
+  min-height: 655px;
+  min-height: 100vh;
+  background-color: #0d83c3;
+  color: #FFFFFF;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -312,9 +343,19 @@ h6 {
   margin-top: 35px;
 }
 
+.p-0 {
+  padding: 0px;
+  padding: 0px;
+}
+
 .pv-52 {
   padding-top: 52px;
   padding-bottom: 52px;
+}
+
+.pv-77 {
+  padding-top: 77px;
+  padding-bottom: 77px;
 }
 
 .bg-img-block {
@@ -338,6 +379,41 @@ h6 {
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary {
+  color: #FFFFFF !important;
+  background-color: #f05f40;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:active:hover, .btn-primary:focus:active, .btn-primary:focus {
+  background-color: #f05f40;
+}
+
+.btn-block {
+  min-height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-inscribete {
+  width: 280px;
+  margin: 1em auto;
+}
+
+.btn-sponsor {
+  width: 300px;
+  margin: 1em auto;
+  background-color: #FFFFFF;
+  color: #222222 !important;
+}
+
+.btn-sponsor:hover, .btn-sponsor:active, .btn-sponsor:active:hover, .btn-sponsor:focus:active, .btn-sponsor:focus {
+  background-color: #FFFFFF;
 }
 
 /* ==========================================================================
