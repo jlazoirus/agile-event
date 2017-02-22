@@ -272,7 +272,7 @@ p {
     padding: 15px;
     font-size: 45px;
     font-weight: 700;
-    width: 800px;
+    max-width: 800px;
     margin-bottom: 45px;
 }
 
@@ -280,33 +280,38 @@ p {
   font-weight: 300;
   font-size: 18px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  width: 600px;
+  max-width: 600px;
   margin:auto;
 }
 
 /* Fin: Home */
-#evento {
+#evento, #contacto {
   position: relative;
-  min-height: 655px;
   background-color: #f05f40;
 }
 
-#formato {
+#formato, #ubicanos {
   position: relative;
   min-height: 655px;
 }
 
-#formato i, #formato a {
+#formato i, #formato a, #ubicanos i{
   color: #f05f40;
 }
 
-#formato, #inscripcion {
+#formato, #inscripcion, #ubicanos {
   background-color: #FFFFFF;
   color: #333;
 }
 
-#formato p, #inscripcion p {
+#formato p, #inscripcion p, #ubicanos p {
   color: #333;
+}
+#ubicanos p {
+  width:40%;
+  float: left;
+  margin-top: 130px;
+  font-size: 25px;
 }
 
 #sponsors {
@@ -314,6 +319,15 @@ p {
   min-height: 655px;
   background-color: #0d83c3;
   color: #FFFFFF;
+}
+
+#map {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    float: right;
 }
 
 /* ==========================================================================
@@ -343,6 +357,29 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+form {
+    text-align: center;
+}
+input {
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 35px;
+    color: black;
+}
+
+textarea {
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 165px;
+    color: black;
+}
 .m-0 {
   margin: 0px;
 }
@@ -432,6 +469,10 @@ h6 {
   .service-box {
     margin-top: 20px;
   }
+  .send-button {
+      max-width:300px;
+      margin:auto;
+  }
 }
 
 /* XS Down */
@@ -445,6 +486,16 @@ h6 {
   #home .home-content p {
     font-size: 13px;
     margin-top: 7px;
+  }
+  #ubicanos p {
+    width: 80%;
+    margin: 10%;
+    margin-top: 0;
+    font-size: 15px;
+  }
+  #map {
+    height: 320px;
+    width: 97%;
   }
 }
 
