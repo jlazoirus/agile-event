@@ -121,7 +121,6 @@ p {
    @mixin site-section-desktop() {
     position: relative;
     min-height: $min_height_desktop;
-    min-height: 100vh;
    }
 /* ==========================================================================
    Import Fonts

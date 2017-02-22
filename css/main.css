@@ -110,10 +110,12 @@ p {
    ========================================================================== */
 /* Menu */
 .site-menu {
-  position: absolute;
+  position: fixed;
   z-index: 15;
-  background-color: transparent;
+  background-color: black;
   width: 100%;
+  top: 0;
+
 }
 
 .site-menu.fixed {
@@ -253,7 +255,6 @@ p {
 
 #home .home-content {
   position: absolute;
-  width: 600px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -266,25 +267,33 @@ p {
 #home .home-content .logo {
   width: 420px;
 }
+#home h1 {
+    background-color: red;
+    padding: 15px;
+    font-size: 45px;
+    font-weight: 700;
+    width: 800px;
+    margin-bottom: 45px;
+}
 
 #home .home-content p {
   font-weight: 300;
   font-size: 18px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  width: 600px;
+  margin:auto;
 }
 
 /* Fin: Home */
 #evento {
   position: relative;
   min-height: 655px;
-  min-height: 100vh;
   background-color: #f05f40;
 }
 
 #formato {
   position: relative;
   min-height: 655px;
-  min-height: 100vh;
 }
 
 #formato i, #formato a {
@@ -303,7 +312,6 @@ p {
 #sponsors {
   position: relative;
   min-height: 655px;
-  min-height: 100vh;
   background-color: #0d83c3;
   color: #FFFFFF;
 }
